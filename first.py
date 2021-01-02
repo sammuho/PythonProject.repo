@@ -12,7 +12,6 @@ class Router:
         desc = f'Router Model:{self.model} \n'
         f'Software Version:{self.swversion} \n'f'Router Management Address:{self.ip_add}'
         
-
         return desc
 
         rtr1 = Router('iosV', '15.6.7', '10.10.10.1')
