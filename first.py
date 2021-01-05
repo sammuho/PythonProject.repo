@@ -1,3 +1,5 @@
+import sys
+from devices import Router
 class Router:
     '''Router class'''
 
@@ -17,5 +19,5 @@ class Router:
         rtr1 = Router('iosV', '15.6.7', '10.10.10.1')
         rtr2 = Router('isr4221', '16.9.5', '10.10.10.5')
 
-        print('rtr1\n', rtr1.getdesc(), '\n', sep='')
-        print('rtr2\n', rtr2.getdesc(), sep='')
+print('rtr1\n', rtr1.getdesc(), '\n', sep='')
+print('rtr2\n', rtr2.getdesc(), sep='')
