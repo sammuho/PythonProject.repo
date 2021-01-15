@@ -36,4 +36,6 @@ de.append(2)
 de.appendleft(3)
 print(de)
 de.popleft()
+#de.clear() clears all the elements
+#de.rotate(1) rotates the elements 1 pos to the right
 print(de)

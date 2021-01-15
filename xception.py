@@ -15,7 +15,7 @@ def test_value(a):
         raise ValueTooLowError('Value too low', a) 
     return a  
 try:
-    test_value(1001)
+    test_value(10)
 except valueTooHighError as e:
     print(e)
 except ValueTooLowError as e:

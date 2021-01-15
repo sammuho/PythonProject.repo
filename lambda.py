@@ -20,5 +20,6 @@ points2D=[(1, 9),(4,1),(5,-3),(10,2)]
 sorted_by_y= sorted(points2D, key=lambda x:x[1])
 #x value of index 1
 mylist= [-1, -4, -2, -3, 1, 2, 3, 4]
+#abs absolute does not consider sign on the number
 sorted_by_abs=sorted(mylist, key =lambda x: abs(x))
 print(sorted_by_abs)
