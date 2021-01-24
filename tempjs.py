@@ -7,19 +7,23 @@ class User:
         self.active=active
         self.balance=balance
         self.friends=friends
+
 class Player:
     #other custom class
     def __init__(self, name, nickname, level):
         self.name=name
         self.nickname=nickname
         self.level=level
+
 def encode_obj(obj):
     """takes in a custom object and returns a dictionary representation of object. This dict representation also includes object's module and names."""
     #populate the dictionary with object meta data
     obj_dict={"__class__": obj.__class__.__name__,"__module__": obj.__module__}
     #populate the dictionary with object properties
     obj_dict.update(obj.__dict__)
+    
     return obj_dict
+
 def decode_dct(dct):
     """Takes in a dict and rturns a custom object associated with the dict.it makes use of the module__module__ and __class__ metadata inthe dictinary to know which object tupe to create"""
     if "__class__" in dct:
